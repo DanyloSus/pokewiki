@@ -137,6 +137,7 @@ class MyAppView extends StatefulWidget {
 class _MyAppViewState extends State<MyAppView> {
   getData() {
     BlocProvider.of<PageCubit>(context).loadValues();
+    BlocProvider.of<ThemeCubit>(context).loadValues();
   }
 
   @override
